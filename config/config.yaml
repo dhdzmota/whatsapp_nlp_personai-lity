@@ -1,0 +1,20 @@
+links:
+  emoji_url: http://www.unicode.org/emoji/charts/full-emoji-list.html
+  emoji_modifiers_url: http://www.unicode.org/emoji/charts/full-emoji-modifiers.html
+
+files:
+  file1: Chat de WhatsApp con Ana Sofía López Zúñiga 🖤.txt
+  file2: Chat de WhatsApp con Diego Meza Corona.txt
+  file3: Chat de WhatsApp con Familia. 👨👩👦👦👶🐕🐶.txt
+
+interim_data:
+  file: chat_cleaned_preprocessed.csv
+  file2: fields_and_features.csv
+  sets: ['past', 'test', 'train', 'dev', 'future']
+
+external_data:
+  file: response_data.json
+
+processed_data:
+  file: all_datasets
+

@@ -1,0 +1,26 @@
+count_vectorizer:
+  stop_words_list: [
+    'que', 'me', 'de', 'y', 'es', 'pero', 'yo', 'tu','el', 'nosotros',
+    'ustedes', 'ellos', 'a','ante', 'bajo','cabe', 'con', 'contra', 'de', 'en',
+    'entre', 'hacia', 'hasta', 'para', 'segun', 'sobre','tras', 'muy', 'como',
+    'donde', 'porque', 'por', 'del', 'la', 'lo', 'los', 'un', 'una', 'uno',
+    'mi', 'tu', 'se', 'desde',
+  ]
+  min_count: 3
+
+pca:
+  principal_components: 50
+
+train_window:
+  start: '2021/07/15'
+  end: '2022/07/15'
+
+past_window:
+  start: '2000/01/31'
+  end: '2021/07/15'
+
+future_window:
+  start: '2022/07/15'
+  end: '2030/01/31'
+
+random_state: 69
