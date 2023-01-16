@@ -3,6 +3,13 @@ import pickle
 
 basedir = os.path.join(os.path.dirname(__file__), '..')
 
+def read_txt_phrases_as_list(file_with_path):
+    with open(file_with_path, 'r') as f:
+        text = f.read()
+    text_list = text.split('\n')
+    return text_list
+
+
 def save_pickle(stuff_to_pickle, save_at, file_wo_extention):
     protocol = pickle.HIGHEST_PROTOCOL
     with open(f'{save_at}/{file_wo_extention}.pkl', 'wb') as file:
