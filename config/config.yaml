@@ -3,9 +3,8 @@ links:
   emoji_modifiers_url: http://www.unicode.org/emoji/charts/full-emoji-modifiers.html
 
 files:
-  file1: Chat de WhatsApp con Ana Sofía López Zúñiga 🖤.txt
-  file2: Chat de WhatsApp con Diego Meza Corona.txt
-  file3: Chat de WhatsApp con Familia. 👨👩👦👦👶🐕🐶.txt
+  file1: Chat de WhatsApp con AnaSofía.txt
+  file2: Chat de WhatsApp con Diego.txt
 
 interim_data:
   file: chat_cleaned_preprocessed.csv
