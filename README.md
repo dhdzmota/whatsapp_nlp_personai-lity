@@ -1,7 +1,21 @@
-whatsapp_conversation_analysis
+Whatsapp Conversation Analysis
 ==============================
 
-This is a repo to make the analysis of a whatsapp conversation.[D[D[D[
+This is a repo to make the analysis of a whatsapp conversation. In order for this repo to work, the conversation must be within two people.
+
+
+![Whatsapp Image](./whatsapp_image_picture.jpg)
+
+This develops an AI called Personality, which learns from each individual phrase of the conversation. 
+Then it can predict if a phrase is most likely to be said by one of the two users.
+
+In order to execute this repo you need three requirements: 
+- first of all, one must have python3.8
+- Then you should create a new virtual environment.
+- Finally, the information of the whatsapp conversation must be in the path: raw/data/ 
+One can change the config files to have the desired configuration
+
+With all of this information it is just a matter of executing the following command: `python general_process.py`. This will automatically install the dependencies and train the model.
 
 Project Organization
 ------------
