@@ -21,9 +21,14 @@ def get_scores_and_bins_for_datasets(all_data_dict, steps, model):
         score = model_predict(model, all_data_dict[key]['x'])
         all_data_dict[key]['score'] = pd.DataFrame(pd.Series(score),
                                                    columns=['score'])
-        categories, score_bins = pd.qcut(all_data_dict[key]['score'].score,
-                                         q=steps, retbins=True)
+        categories, score_bins = pd.qcut(
+            all_data_dict[key]['score'].score,
+            q=steps,
+            retbins=True,
+            duplicates='drop'
+        )
         all_data_dict[key]['score']['score_categories'] = categories.to_list()
+        score_bins = list(sorted(list(set(score_bins))))
         all_data_dict[key]['score']['y'] = all_data_dict[key]['y'].to_list()
     return all_data_dict, score_bins
 

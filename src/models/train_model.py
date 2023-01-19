@@ -49,18 +49,19 @@ def main():
         key=KEY,
         sub_key=SUBKEY,
     )
-    processed_file = os.path.join(processed_data_path,processed_data_file_name)
+    processed_file = os.path.join(processed_data_path, processed_data_file_name)
     all_datasets = pd.read_pickle(f'{processed_file}.pkl')
     set_train = all_datasets['train']['x'], all_datasets['train']['y']
     set_test = all_datasets['test']['x'], all_datasets['test']['y']
     set_dev = all_datasets['dev']['x'], all_datasets['dev']['y']
     set_past = all_datasets['past']['x'], all_datasets['past']['y']
     set_future = all_datasets['future']['x'], all_datasets['future']['y']
-    model = train_model(train_set=set_train,eval_set=set_dev)
+    model = train_model(train_set=set_train, eval_set=set_test)
     save_pickle(
         stuff_to_pickle=model,
         save_at=models_path,
-        file_wo_extention='model')
+        file_wo_extention='model'
+    )
 
 
 if __name__ == '__main__':

@@ -48,6 +48,7 @@ def make_real_date_a_date(data):
 
 def build_features(data):
     print('Computing features...')
+    data['text'] =  data['text'].astype('str')
     data['extracted_emojis'] = data['text'].apply(extracted_emojis)
     data['week_day_num'] = data['real_date'].apply(week_day_num)
     data['week_day'] = data['real_date'].apply(week_day)

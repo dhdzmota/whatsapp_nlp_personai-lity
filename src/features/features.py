@@ -28,7 +28,7 @@ def text_len(text):
 def extracted_emojis(text):
     if not text:
         return None
-    emoji_list = [emj for emj in text if emj in emoji.UNICODE_EMOJI['en']]
+    emoji_list = [emj for emj in str(text) if emj in emoji.UNICODE_EMOJI['en']]
     return ''.join(emoji_list)
 
 

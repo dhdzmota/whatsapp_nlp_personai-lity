@@ -39,6 +39,7 @@ def fit_text_transformers(
     data = train_data.copy()
     if not (past_data is None):
         data = pd.concat([train_data, past_data])
+    data = data[data.reduced_text_with_emojis_demojized.notna()]
     text_data = data.reduced_text_with_emojis_demojized
     print('Generation of vectorizer for text...')
     vectorizer = CountVectorizer(
@@ -80,6 +81,7 @@ def fit_text_transformers(
 
 def transform_data(data):
     print('Transforming data...')
+    data = data[data.reduced_text_with_emojis_demojized.notna()]
     vectorizer = load_general_model('vectorizer')
     usable_columns = load_general_model('usable_columns')
     pca = load_general_model('pca')
