@@ -3,8 +3,7 @@ links:
   emoji_modifiers_url: http://www.unicode.org/emoji/charts/full-emoji-modifiers.html
 
 files:
-  file1: Chat de WhatsApp con AnaSofía.txt
-  file2: Chat de WhatsApp con Diego.txt
+  file1: NOMBREDEARCHIVO.txt
 
 interim_data:
   file: chat_cleaned_preprocessed.csv
