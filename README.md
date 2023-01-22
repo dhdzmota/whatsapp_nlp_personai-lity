@@ -1,4 +1,4 @@
-Whatsapp Conversation Analysis
+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Whatsapp Conversation Analysis
 ==============================
 
 This is a repo to make the analysis of a whatsapp conversation. In order for this repo to work, the conversation must be within two people.
@@ -13,7 +13,7 @@ In order to execute this repo you need three requirements:
 - first of all, one must have python3.8
 - Then you should create a new virtual environment.
 - Finally, the information of the whatsapp conversation must be in the path: raw/data/ 
-One can change the config files to have the desired configuration
+One can change the config files to have the desired configuration, in the path (config/config.yaml)
 
 With all of this information it is just a matter of executing the following command: `python general_process.py`. This will automatically install the dependencies and train the model.
 
