@@ -12,6 +12,7 @@ command_chains = [
     f'python {dir}src/features/encode_text_information.py',
     f'python {dir}src/models/train_model.py',
     f'python {dir}src/visualization/visualize_and_get_parameters.py',
+    f'python {dir}src/app.py',
 ]
 
 def run_pipeline():
