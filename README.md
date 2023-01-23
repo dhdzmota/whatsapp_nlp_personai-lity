@@ -1,4 +1,4 @@
-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Whatsapp Conversation Analysis
+Whatsapp Conversation Analysis
 ==============================
 
 This is a repo to make the analysis of a whatsapp conversation. In order for this repo to work, the conversation must be within two people.
